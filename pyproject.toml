@@ -1,0 +1,11 @@
+[project]
+name = "vix"
+version = "0.0.1"
+dynamic = ["dependencies"]
+
+[project.scripts]
+config = "vix.src.config:print_envs"
+main = "vix.src.main:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = "requirements.txt" }
